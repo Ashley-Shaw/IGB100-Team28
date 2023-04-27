@@ -10,12 +10,9 @@ public class Player : MonoBehaviour {
 
     public GameObject mainCamera;
 
-    //UI Elements
-    public Slider healthbar;
-
 	// Use this for initialization
 	void Start () {
-        maxHealth = health;
+
 	}
 	
 	// Update is called once per frame
@@ -25,8 +22,6 @@ public class Player : MonoBehaviour {
 
     public void takeDamage(float dmg) {
         health -= dmg;
-
-        healthbar.value = (health / maxHealth);
 
         if (health <= 0) {
             mainCamera.SetActive(true);

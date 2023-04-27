@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour {
 
@@ -9,6 +10,13 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
 
     public GameObject player;
+
+    public int ItemCount;
+
+    public TMP_Text GameOver;
+
+    //Item UI
+    public Text ItemCountText;
 
     // Awake Checks - Singleton setup
     void Awake() {
@@ -33,5 +41,20 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+
+        UpdateUI();
 	}
+
+    private void UpdateUI()
+   {
+
+        ItemCountText.text = "";
+
+    }
+    public void PickupItem()
+    {
+        ItemCount -= 1;
+        Debug.Log(ItemCount);
+    }
 }
