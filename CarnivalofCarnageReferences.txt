@@ -1,0 +1,3 @@
+Jacob Stevenson References
+
+https://answers.unity.com/questions/1917193/is-there-a-way-to-make-a-press-e-to-interact-when.html - Playerinteraction Script adapted from this tutorial
