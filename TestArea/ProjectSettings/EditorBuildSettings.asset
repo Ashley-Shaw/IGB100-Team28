@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Cycle2PrototypeScene.unity
+    guid: 553c14113fab29f42b54116fe8f41b4e
   m_configObjects: {}
