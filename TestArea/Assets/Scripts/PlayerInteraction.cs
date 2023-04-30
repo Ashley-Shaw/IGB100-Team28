@@ -25,7 +25,7 @@ public class PlayerInteraction : MonoBehaviour
 
         RaycastHit hit;
 
-        Score.text = "Item Count:" + Counter + "/4";
+        Score.text = "Item Count:" + Counter + "/8";
 
 
         if (Physics.Raycast(ray, out hit, raycastDistance))
@@ -62,13 +62,18 @@ public class PlayerInteraction : MonoBehaviour
             else if (hit.collider.CompareTag("Bars"))
             {
                 interactText.text = "Press E to open the door";
-                if (Counter == 4)
+                if (Counter == 8)
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         Destroy(hit.transform.gameObject);
 
                     }
+
+            if (Counter < 4)
+                {
+                    interactText.text = "Not enough collectibles.";
+                }
             }
 
         }
