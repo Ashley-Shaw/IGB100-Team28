@@ -24,8 +24,9 @@ public class Player : MonoBehaviour {
         health -= dmg;
 
         if (health <= 0) {
-            mainCamera.SetActive(true);
-            Destroy(this.gameObject);
+            //mainCamera.SetActive(true);
+            //Destroy(this.gameObject);
+            Application.LoadLevel(Application.loadedLevel);
         }
     }
 }
