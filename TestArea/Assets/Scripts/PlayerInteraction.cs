@@ -17,6 +17,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public TMP_Text GameOverText;
 
+    public int goal = 10;
     public int Counter = 0;
 
     void Update()
@@ -25,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
 
         RaycastHit hit;
 
-        Score.text = "Item Count:" + Counter + "/8";
+        Score.text = "Item Count:" + Counter + "/" + goal;
 
 
         if (Physics.Raycast(ray, out hit, raycastDistance))
@@ -62,7 +63,7 @@ public class PlayerInteraction : MonoBehaviour
             else if (hit.collider.CompareTag("Bars"))
             {
                 interactText.text = "Press E to open the door";
-                if (Counter == 8)
+                if (Counter >= goal)
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -70,7 +71,7 @@ public class PlayerInteraction : MonoBehaviour
 
                     }
 
-            if (Counter < 4)
+            if (Counter < goal)
                 {
                     interactText.text = "Not enough collectibles.";
                 }
