@@ -17,7 +17,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public TMP_Text GameOverText;
 
-    public int goal = 10;
+    public int goal = 5;
     public int Counter = 0;
 
     void Update()
@@ -49,12 +49,14 @@ public class PlayerInteraction : MonoBehaviour
 
             else if (hit.collider.CompareTag("Door"))
             {
-                interactText.text = "Press E to escape";
+                interactText.text = "Press E to open";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    GameOverText.text = "You Escaped!";
-
+                    //GameOverText.text = "You Escaped!";
+                    Counter = 0;
+                    goal = 10;
+                    Destroy(hit.transform.gameObject);
                 }
 
 
@@ -62,7 +64,7 @@ public class PlayerInteraction : MonoBehaviour
 
             else if (hit.collider.CompareTag("Bars"))
             {
-                interactText.text = "Press E to open the door";
+                interactText.text = "Press E to unlock";
                 if (Counter >= goal)
 
                     if (Input.GetKeyDown(KeyCode.E))
@@ -72,6 +74,37 @@ public class PlayerInteraction : MonoBehaviour
                     }
 
             if (Counter < goal)
+                {
+                    interactText.text = "Not enough collectibles.";
+                }
+            }
+
+            else if (hit.collider.CompareTag("Door2"))
+            {
+                interactText.text = "Press E to open";
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    //GameOverText.text = "You Escaped!";
+                    Counter = 0;
+                    goal = 15;
+                    Destroy(hit.transform.gameObject);
+                }
+
+
+            }
+            else if (hit.collider.CompareTag("Bars2"))
+            {
+                interactText.text = "Press E to unlock";
+                if (Counter >= goal)
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        Destroy(hit.transform.gameObject);
+
+                    }
+
+                if (Counter < goal)
                 {
                     interactText.text = "Not enough collectibles.";
                 }

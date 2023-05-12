@@ -8,6 +8,8 @@ TagManager:
   - Item
   - Door
   - Bars
+  - Door2
+  - Bars2
   layers:
   - Default
   - TransparentFX
