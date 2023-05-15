@@ -8305,7 +8305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -507.2381
+      value: -460.53
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11376,7 +11376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &292733916
 Transform:
   m_ObjectHideFlags: 0
@@ -14480,7 +14480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &435669520
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -31525,7 +31525,7 @@ MonoBehaviour:
   interactText: {fileID: 471858385}
   Score: {fileID: 9218575}
   GameOverText: {fileID: 1942521048}
-  goal: 5
+  goal: 10
   Counter: 0
 --- !u!23 &831889779
 MeshRenderer:
