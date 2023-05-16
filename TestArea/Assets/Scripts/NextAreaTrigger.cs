@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class NextAreaTrigger : MonoBehaviour
 {
+    private int nextSceneToLoad;
     // Start is called before the first frame update
     void Start()
     {
-        
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class NextAreaTrigger : MonoBehaviour
 
         if (otherObject.transform.tag == "Player")
         {
-            SceneManager.LoadScene(sceneBuildIndex:1);
+            SceneManager.LoadScene(nextSceneToLoad);
 
         }
     }

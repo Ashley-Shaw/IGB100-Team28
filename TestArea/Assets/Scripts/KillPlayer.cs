@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallEnemy : MonoBehaviour
+public class KillPlayer : MonoBehaviour
 {
 
     private float damage = 100;

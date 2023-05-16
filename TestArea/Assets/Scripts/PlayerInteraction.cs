@@ -55,7 +55,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     //GameOverText.text = "You Escaped!";
                     Counter = 0;
-                    goal = 10;
+                    //goal = 10;
                     Destroy(hit.transform.gameObject);
                 }
 
@@ -87,7 +87,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     //GameOverText.text = "You Escaped!";
                     Counter = 0;
-                    goal = 15;
+                    //goal = 15;
                     Destroy(hit.transform.gameObject);
                 }
 

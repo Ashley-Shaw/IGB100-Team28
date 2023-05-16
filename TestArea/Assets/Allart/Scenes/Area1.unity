@@ -130,6 +130,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418841392}
     m_Modifications:
+    - target: {fileID: 1688656692928618118, guid: b8aaadb68badac143aad10fcf4699d49,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2796694012824684449, guid: b8aaadb68badac143aad10fcf4699d49,
         type: 3}
       propertyPath: m_RootOrder
@@ -276,6 +281,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &35533564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35533561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ad5080b0f244c48bfe3951ef5d6845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &44711235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2995,7 +3012,7 @@ Transform:
   - {fileID: 418841392}
   - {fileID: 247356770}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316612309
 GameObject:
@@ -11124,7 +11141,7 @@ PrefabInstance:
     - target: {fileID: 5962691170158750262, guid: 9ec1bb958f5a29e468f1f8d9df92729c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5962691170158750262, guid: 9ec1bb958f5a29e468f1f8d9df92729c,
         type: 3}
