@@ -10,6 +10,8 @@ TagManager:
   - Bars
   - Door2
   - Bars2
+  - Door3
+  - Bars3
   layers:
   - Default
   - TransparentFX

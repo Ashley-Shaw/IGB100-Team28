@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5875899741138975513}
   - component: {fileID: 1540383804647071050}
   - component: {fileID: 4565610224899643278}
+  - component: {fileID: 656201173469547983}
   m_Layer: 0
   m_Name: hitHmmar
   m_TagString: Untagged
@@ -125,3 +126,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03823748, y: 0.01105271, z: 0.28850675}
   m_Center: {x: 0.00037052153, y: 0.037763983, z: 0.14432633}
+--- !u!208 &656201173469547983
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520059802537258659}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.015, y: 0.041, z: 0.14400001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.002, z: 0.14400001}
+  m_TimeToStationary: 0.5

@@ -108,6 +108,37 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     interactText.text = "Not enough collectibles.";
                 }
+
+                else if (hit.collider.CompareTag("Door3"))
+                {
+                    interactText.text = "Press E to open";
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        //GameOverText.text = "You Escaped!";
+                        Counter = 0;
+                        //goal = 15;
+                        Destroy(hit.transform.gameObject);
+                    }
+
+
+                }
+                else if (hit.collider.CompareTag("Bars3"))
+                {
+                    interactText.text = "Press E to unlock";
+                    if (Counter >= goal)
+
+                        if (Input.GetKeyDown(KeyCode.E))
+                        {
+                            Destroy(hit.transform.gameObject);
+
+                        }
+
+                    if (Counter < goal)
+                    {
+                        interactText.text = "Not enough collectibles.";
+                    }
+                }
             }
 
         }
