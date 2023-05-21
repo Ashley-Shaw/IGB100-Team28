@@ -39,7 +39,9 @@ public class PlayerInteraction : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Counter += 1;
+                    FindObjectOfType<AudioManager>().Play("Anvil");
                     Destroy(hit.transform.gameObject);
+                    
 
 
                 }

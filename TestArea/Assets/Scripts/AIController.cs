@@ -64,6 +64,7 @@ public class AIController : MonoBehaviour
         else
         {
             Patroling();
+            FindObjectOfType<AudioManager>().Play("Spotted");
         }
     }
 
@@ -77,6 +78,7 @@ public class AIController : MonoBehaviour
         {
             Move(speedRun);
             navMeshAgent.SetDestination(m_PlayerPosition);          //  set the destination of the enemy to the player location
+            
         }
         if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the enemy arrive to the player location
         {
